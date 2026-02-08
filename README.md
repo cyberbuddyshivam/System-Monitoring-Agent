@@ -1,70 +1,66 @@
-🖥️ System Monitoring Agent
+# 🖥️ System Monitoring Agent
 
-An AI-inspired system monitoring agent built using Python that continuously observes system activity, analyzes events, maintains memory, and sends real-time alerts using Twilio.
+An **AI-inspired system monitoring agent** built using **Python** that continuously observes system activity, analyzes events, maintains memory, and sends **real-time alerts using Twilio**.
 
-The project is designed with a modular, agent-based architecture, making it easy to extend, automate, and scale into a full monitoring or automation product.
+The project follows a **modular, agent-based architecture**, making it easy to extend, automate, and scale into a full-fledged monitoring or automation product.
 
-🚀 Key Features
+---
 
-🔍 Continuous system observation
+## 🚀 Key Features
 
-🧠 Stateful memory and historical tracking
+- 🔍 Continuous system observation  
+- 🧠 Stateful memory & historical tracking  
+- 📊 Intelligent analysis layer  
+- 🚨 Real-time alerting via SMS (Twilio)  
+- 🧩 Modular, multi-agent design  
+- 📁 Persistent logs and history  
+- ⚙️ Config-driven behavior  
 
-📊 Intelligent analysis layer
+---
 
-🚨 Real-time alerting via SMS
+## 🧠 Agent Architecture
 
-🧩 Modular, multi-agent design
+The system is designed as a **coordinated group of agents**, each handling a single responsibility.
 
-📁 Persistent logs and history
+| Module        | Description |
+|---------------|-------------|
+| `agent.py`    | Main orchestrator that runs the agent loop |
+| `observer.py` | Observes system events and metrics |
+| `analyzer.py` | Analyzes observed data for conditions |
+| `memory.py`   | Stores historical context and state |
+| `notifier.py` | Sends alerts and notifications |
+| `config.py`   | Centralized configuration |
 
-⚙️ Config-driven behavior
+### Why this architecture?
+- ✅ High maintainability  
+- ✅ Easy testing  
+- ✅ Plug-and-play extensibility  
 
-🧠 Agent Architecture
+---
 
-The system is built as a coordinated group of agents, each with a single responsibility.
+## 🔄 Workflow
 
-Module	Description
-agent.py	Main orchestrator that runs the agent loop
-observer.py	Observes system events and metrics
-analyzer.py	Analyzes observed data for conditions
-memory.py	Stores historical context and state
-notifier.py	Sends alerts and notifications
-config.py	Centralized configuration
+1. Observer captures system data  
+2. Analyzer evaluates data against rules  
+3. Memory stores relevant state/history  
+4. Notifier triggers alerts when required  
+5. Agent coordinates the entire lifecycle  
 
-This separation ensures:
+---
 
-High maintainability
+## 🛠️ Tech Stack
 
-Easy testing
+- Python 3  
+- Object-Oriented Design  
+- JSON-based persistence  
+- Environment-based secrets management  
+- External alerting integration (Twilio)  
 
-Plug-and-play extensibility
+---
 
-🔄 Workflow
+## 📂 Project Structure
 
-Observer captures system data
-
-Analyzer evaluates data against rules
-
-Memory stores relevant state/history
-
-Notifier triggers alerts when required
-
-Agent coordinates the entire lifecycle
-
-🛠️ Tech Stack
-
-Python 3
-
-Object-oriented design
-
-JSON-based persistence
-
-Environment-based secrets management
-
-External alerting integration
-
-📂 Project Structure
+```bash
 system_agent/
 │
 ├── agent.py
@@ -80,13 +76,12 @@ system_agent/
 ├── history.json
 ├── .gitignore
 └── README.md
-
 ▶️ How to Run
 1️⃣ Clone the repository
-git clone https://github.com/YOUR_USERNAME/system_agent.git
+git clone https://github.com/cyberbuddyshivam/System-Monitoring-Agent.git
 cd system_agent
 
-2️⃣ Create and activate virtual environment
+2️⃣ Create & activate virtual environment
 python -m venv .venv
 
 
@@ -108,9 +103,7 @@ This project uses Twilio SMS to send system alerts.
 
 Step 1: Create a Twilio account
 
-Sign up on Twilio
-
-Get:
+Sign up on Twilio and obtain:
 
 Account SID
 
@@ -132,13 +125,13 @@ TARGET_PHONE_NUMBER=+91XXXXXXXXXX
 
 .env must NOT be committed
 
-Ensure .env is listed in .gitignore
+Ensure .env is added to .gitignore
 
 Step 3: Verify configuration
 
 Check config.py to ensure environment variables are loaded correctly.
 
-4️⃣ Run the agent
+▶️ Run the Agent
 python agent.py
 
 
@@ -146,11 +139,11 @@ You should see logs indicating:
 
 Agent startup
 
-Observation cycle
+Observation cycles
 
 Analysis events
 
-Notification triggers (if conditions are met)
+Notification triggers (when conditions are met)
 
 📨 Notifications
 
@@ -162,7 +155,7 @@ Notification layer is easily extendable
 
 🔮 Future Enhancements
 
-📈 CPU, RAM, Disk monitoring
+📈 CPU, RAM & Disk monitoring
 
 🤖 ML-based anomaly detection
 
@@ -204,7 +197,8 @@ Shivam Sharma
 B.Tech | AI Agents | Cybersecurity | Automation
 
 🔗 GitHub: https://github.com/cyberbuddyshivam/System-Monitoring-Agent.git
-LinkedIn : https://www.linkedin.com/in/cyberbuddyshivam/
+
+🔗 LinkedIn: https://www.linkedin.com/in/cyberbuddyshivam/
 
 ⭐ Support
 
@@ -214,4 +208,15 @@ Give it a ⭐ on GitHub
 
 Share feedback or ideas
 
-Use it as a base for your own agents
+Use it as a base for your own agents 🚀
+
+
+---
+
+If you want next:
+- 🔥 **README badges** (Python, Twilio, License, Status)
+- 📸 **Architecture diagram**
+- 🧵 **GitHub Issues & PR templates**
+- 📢 **LinkedIn launch post**
+
+Just tell me 👍
